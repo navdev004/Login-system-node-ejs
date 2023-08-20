@@ -1,0 +1,70 @@
+<%- include('partials/header') -%>
+
+
+    <div class="wrapper  mb-4">
+
+        <div class="container p-5 main d-flex justify-content-center align-items-center">
+
+            <div class="row bg-white rounded-2 p-4">
+                <div class="col-md-6 side-image">
+                    <img class="img-fluid rounded-2"
+                        src="https://images.pexels.com/photos/3314294/pexels-photo-3314294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+
+                </div>
+                <div class="col-md-6 right d-flex align-items-center justify-content-center">
+                    <div class="input-box">
+
+
+
+
+
+                        <h2 class="text-center p-3">
+                            <%= title %>
+                        </h2>
+                        <% if(error.length> 0){ %>
+
+                            <div class="alert alert-danger " style="font-size: 15px;">
+                                <%=error%>
+                            </div>
+                            <% } %>
+                                <% if(success.length> 0){ %>
+
+                                    <div class="alert alert-success">
+                                        <%=success%>
+                                    </div>
+                                    <% } %>
+
+                                        <!-- <% if(locals.logout){ %>
+
+                                            <div class="alter alert-success text-center">
+                                                <%= logout %>
+                                            </div>
+                                            <% } %> -->
+                                                <form action="/" method="post">
+
+
+
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" name="email" class="form-control"
+                                                            id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating">
+                                                        <input type="password" name="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+                                                    <div class="input-field mt-3 text-center">
+                                                        <button class="btn btn-primary" type="submit">Login</button>
+                                                    </div>
+                                                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <%- include('partials/footer') -%>

@@ -1,0 +1,40 @@
+<%- include('partials/header') -%>
+
+    <div class="container mt-5">
+        <div class="text-center center-divmt-5">
+            <div class="w-25 border py-5 mt-5">
+                <h3>Welcome to Dashboard</h3>
+                <h5>
+                    <%= locals.user ? user:"User" %>
+                </h5>
+                <a href="/logout">logout</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center center-div my-5">
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top img-fluid" alt="...">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top img-fluid" alt="...">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top img-fluid" alt="...">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <%- include('partials/footer') -%>
