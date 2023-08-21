@@ -40,9 +40,7 @@ exports.postLogin =(req,res)=>{
 
 
 exports.dashboard= (req,res)=>{
-   if(!req.session.isLoggedIn){
-    return res.redirect('/');
-   }
+
 
  if(req.session.user){
     res.render('dashboard',{title:'Dashboard',user:req.session.user});
